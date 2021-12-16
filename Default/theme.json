@@ -1,0 +1,88 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "root",
+          "style": "powerline",
+          "background": "#ffe9aa",
+          "foreground": "#100e23",
+          "properties": {
+            "root_icon": "⚡"
+          }          
+        },
+        {
+          "type": "envvar",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "background": "#0077c2",
+          "foreground": "#ffffff",
+          "properties": {
+            "var_name": "ASPNETCORE_ENVIRONMENT"
+          }
+        },
+        {
+          "type": "envvar",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "background": "#0077c2",
+          "foreground": "#ffffff",
+          "properties": {
+            "var_name": "NETCORE_ENVIRONMENT"
+          }
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "background": "#91ddff",
+          "foreground": "#100e23",
+          "properties": {
+            "folder_icon": "..",
+            "max_depth": 2,
+            "folder_separator_icon": " \uE0B1 ",
+            "home_icon": "🏠",
+            "style": "agnoster_short"
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "background": "#95ffa4",
+          "foreground": "#193549",
+          "powerline_symbol": "\uE0B0"          
+        },
+        {
+          "type": "exit",
+          "style": "powerline",
+          "background": "#ff8080",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\uE0B0",
+          "properties": {
+            "prefix": " 🚨"
+          }
+        }
+      ]      
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#007ACC",
+          "properties": {
+            "prefix": "",
+            "text": "λ"
+          },
+          "style": "plain",
+          "type": "text"
+        }
+      ]      
+    }
+  ],
+  "final_space": false
+}
